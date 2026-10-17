@@ -1,0 +1,19 @@
+[project]
+name = "drug-discovery"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Naren Sengodan", email = "scartegy@gmail.com" }
+]
+requires-python = ">=3.13"
+dependencies = [
+    "rdkit>=2026.9.1",
+]
+
+[project.scripts]
+drug-discovery = "drug_discovery:main"
+
+[build-system]
+requires = ["uv_build>=0.12.5,<0.13.0"]
+build-backend = "uv_build"
